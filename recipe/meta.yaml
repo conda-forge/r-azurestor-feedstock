@@ -1,4 +1,4 @@
-{% set version = "3.7.1" %}
+{% set version = "3.7.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/AzureStor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/AzureStor/AzureStor_{{ version }}.tar.gz
-  sha256: d340c01b90ba901d3a9a29d32dd808a645a6ece21f04e868696aea7c31c045f8
+  sha256: 974f4ee9962ca994f0dd9284e0f2018cdfe789699f35d66f3a5b669de0cb18ea
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
